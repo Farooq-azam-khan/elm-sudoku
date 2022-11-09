@@ -29,7 +29,8 @@ module Sudoku exposing (SudokuCell, create_cell)
 
 * The downside to this lack of exposition is that any sort of feature that require matching the types will need to be done in the file that contain the un-exposed type constructors. 
 * For example, rendering the cell based on the type of cell it is: 
-```
+
+```elm
 cell_to_string : String -> SudokuCell -> String
 cell_to_string empty_str_as sudoku_cell =
     case sudoku_cell of
